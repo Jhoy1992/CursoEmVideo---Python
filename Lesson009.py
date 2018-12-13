@@ -17,5 +17,3 @@ print(someText)
 someText = someText.strip()
 
 print(someText)
-
-#
