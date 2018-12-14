@@ -1,10 +1,11 @@
-AnyName = input('What is your name?')
+AnyName = input('What is your name?').strip()
 
-print(AnyName.upper())
-print(AnyName.lower())
+print('Your name uppercase is {}'.format(AnyName.upper()))
+print('Your name lowercase is {}'.format(AnyName.lower()))
 
 AnyNameNoSpaces = AnyName.replace(' ', '')
-print('This phrase has {} letters.'.format(len(AnyNameNoSpaces)))
+print('This name has {} letters.'.format(len(AnyNameNoSpaces)))
 
 AnyNameFirstName = AnyName.split()
-print('The first name has {} letters.'.format(len(AnyNameFirstName[0])))
+print('The first name has {} letters. (without spaces)'.format(len(AnyNameFirstName[0])))
+
