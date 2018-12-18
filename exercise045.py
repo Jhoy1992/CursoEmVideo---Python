@@ -1,9 +1,17 @@
 from random import randint
+from time import sleep
 
 computer = randint(1,3)
 chose = ['', 'Rock', 'Paper', 'Scissors']
 print('Rock = 1\nPaper = 2\nScissors = 3')
 user = int(input('Choose one: \n'))
+
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!!')
+sleep(1)
 
 if user == computer:
     print('You drew, there is no winner.')
